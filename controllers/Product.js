@@ -146,7 +146,7 @@ try {
       let total = await productSchema.countDocuments({
         title: { $regex: search, $options: "i" },
       });
-      total = total-29
+      total = total
       console.log(total);
      res.send({
       success:true,

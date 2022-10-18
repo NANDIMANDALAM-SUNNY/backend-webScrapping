@@ -223,7 +223,7 @@ try {
 
 const getProfile = async (req, res) => {
   try {
-    fetchProductData()
+    // fetchProductData()
     const token = req.header('jwt-token');
     const decoded = await jwtDecode(token)
     const user = await userSchema.findOne({_id:decoded.id})

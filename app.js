@@ -44,10 +44,10 @@ app.use(fileUpload({
 }))
 
 
-// setInterval(() => {
+setInterval(() => {
   fetchProductData()
-//   console.log("New Data fetched after 12 hours")
-// }, 43200000);
+  console.log("New Data fetched after 12 hours")
+}, 43200000);
 
 
 
